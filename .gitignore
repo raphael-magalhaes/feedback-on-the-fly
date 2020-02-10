@@ -1,4 +1,6 @@
 .expo
 coverage
 node_modules
+reports
 web-build
+.stryker-tmp

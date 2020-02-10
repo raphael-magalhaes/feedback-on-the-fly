@@ -8,8 +8,10 @@ module.exports = {
         '**/*.{js,jsx,ts,tsx}',
         '!**/coverage/**',
         '!**/node_modules/**',
+        '!**/reports/**',
         '!**/web-build/**',
         '!**/babel.config.js',
-        '!**/jest.config.js'
+        '!**/jest.config.js',
+        '!**/stryker.conf.js'
     ]
 }

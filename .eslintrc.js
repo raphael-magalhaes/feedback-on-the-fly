@@ -1,4 +1,5 @@
 const { importOverrides, importRules } = require('./eslint/import')
+const { reactRules } = require('./eslint/react')
 
 module.exports = {
     ignorePatterns: [
@@ -17,7 +18,6 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:import/typescript'
@@ -37,6 +37,7 @@ module.exports = {
     },
     plugins: ['react', '@typescript-eslint', 'import'],
     rules: {
-        ...importRules
+        ...importRules,
+        ...reactRules
     }
 }

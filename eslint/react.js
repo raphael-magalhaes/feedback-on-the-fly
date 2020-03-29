@@ -90,36 +90,24 @@ const reactRules = {
     'react/void-dom-elements-no-children': 'off', // This project does not use DOM elements.
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-child-element-spacing': 'off', // This project does not use DOM elements.
-    'react/jsx-closing-bracket-location': [
-        'error',
-        { selfClosing: 'tag-aligned', nonEmpty: 'tag-aligned' }
-    ],
-    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-closing-bracket-location': 'off', // This rule is unnecessary or might conflict with Prettier.
+
+    'react/jsx-closing-tag-location': 'off', // This rule is unnecessary or might conflict with Prettier.
     'react/jsx-curly-brace-presence': ['error', 'never'],
-    'react/jsx-curly-newline': [
-        'error',
-        {
-            multiline: 'consistent',
-            singleline: 'consistent'
-        }
-    ],
-    'react/jsx-curly-spacing': ['error', 'never'],
-    'react/jsx-equals-spacing': ['error', 'never'],
+    'react/jsx-curly-newline': 'off', // This rule is unnecessary or might conflict with Prettier.
+
+    'react/jsx-curly-spacing': 'off', // This rule is unnecessary or might conflict with Prettier.
+    'react/jsx-equals-spacing': 'off', // This rule is unnecessary or might conflict with Prettier.
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
-    'react/jsx-first-prop-new-line': ['error', 'multiline'],
+    'react/jsx-first-prop-new-line': 'off', // This rule is unnecessary or might conflict with Prettier.
     'react/jsx-fragments': ['error', 'syntax'],
-    'react/jsx-indent': [
-        'error',
-        4,
-        { checkAttributes: true, indentLogicalExpressions: true }
-    ],
-    'react/jsx-indent-props': ['error', 4],
+    'react/jsx-indent': 'off', // This rule is unnecessary or might conflict with Prettier.
+
+    'react/jsx-indent-props': 'off', // This rule is unnecessary or might conflict with Prettier.
     'react/jsx-key': ['error', { checkFragmentShorthand: true }],
     'react/jsx-max-depth': ['error', { max: 5 }],
-    'react/jsx-max-props-per-line': [
-        'error',
-        { maximum: 1, when: 'multiline' }
-    ],
+    'react/jsx-max-props-per-line': 'off', // This rule is unnecessary or might conflict with Prettier.
+
     'react/jsx-no-bind': [
         'error',
         {
@@ -140,7 +128,7 @@ const reactRules = {
     'react/jsx-no-useless-fragment': 'error',
     'react/jsx-one-expression-per-line': 'off', // Conflicts with Prettier.
     'react/jsx-pascal-case': ['error', { allowAllCaps: false, ignore: [] }],
-    'react/jsx-props-no-multi-spaces': 'error',
+    'react/jsx-props-no-multi-spaces': 'off', // This rule is unnecessary or might conflict with Prettier.
     'react/jsx-props-no-spreading': [
         'error',
         {
@@ -162,30 +150,12 @@ const reactRules = {
             reservedFirst: true
         }
     ],
-    'react/jsx-space-before-closing': 'error',
-    'react/jsx-tag-spacing': [
-        'error',
-        {
-            closingSlash: 'never',
-            beforeSelfClosing: 'always',
-            afterOpening: 'never',
-            beforeClosing: 'never'
-        }
-    ],
+    'react/jsx-space-before-closing': 'off', // This rule is unnecessary or might conflict with Prettier.
+    'react/jsx-tag-spacing': 'off', // This rule is unnecessary or might conflict with Prettier.
+
     'react/jsx-uses-react': 'warn', // This rule actually prevents @typescript-eslint/no-unused-vars problems with React. ¯\_(ツ)_/¯
     'react/jsx-uses-vars': 'warn', // This rule actually prevents @typescript-eslint/no-unused-vars problems with JSX. ¯\_(ツ)_/¯
-    'react/jsx-wrap-multilines': [
-        'error',
-        {
-            declaration: 'parens-new-line',
-            assignment: 'parens-new-line',
-            return: 'parens-new-line',
-            arrow: 'parens-new-line',
-            condition: 'parens-new-line',
-            logical: 'parens-new-line',
-            prop: 'parens-new-line'
-        }
-    ]
+    'react/jsx-wrap-multilines': 'off' // This rule is unnecessary or might conflict with Prettier.
 }
 
 module.exports.reactRules = reactRules

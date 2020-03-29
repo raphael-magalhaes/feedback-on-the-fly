@@ -14,6 +14,7 @@
         "mutation": "yarn mutation:run && yarn mutation:open",
         "mutation:run": "yarn stryker run",
         "mutation:open": "http-server ./reports/mutation/html/ -c-1 -o ",
+        "prettier:eslint-check": "npx eslint --print-config App.tsx | npx eslint-config-prettier-check",
         "eject": "expo eject"
     },
     "dependencies": {

@@ -1,5 +1,6 @@
 const { importOverrides, importRules } = require('./eslint/import')
 const { reactRules } = require('./eslint/react')
+const { reactHooksRules } = require('./eslint/reactHooks')
 
 module.exports = {
     ignorePatterns: [
@@ -10,7 +11,7 @@ module.exports = {
         'babel.config.js',
         'jest.config.js',
         'stryker.conf.js',
-        'eslint/'
+        'eslint'
     ],
     env: {
         browser: true,
@@ -35,9 +36,10 @@ module.exports = {
         ecmaVersion: 2020,
         sourceType: 'module'
     },
-    plugins: ['react', '@typescript-eslint', 'import'],
+    plugins: ['react', '@typescript-eslint', 'import', 'react-hooks'],
     rules: {
         ...importRules,
-        ...reactRules
+        ...reactRules,
+        ...reactHooksRules
     }
 }
